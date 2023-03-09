@@ -9,12 +9,14 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      "@": resolve(__dirname, "./src"),
       "@mocks": resolve(__dirname, "./src/mocks"),
       "@components": resolve(__dirname, "./src/components"),
       "@utils": resolve(__dirname, "./src/utils"),
       "@request": resolve(__dirname, "./src/utils/request"),
       "@hooks": resolve(__dirname, "./src/hooks"),
-    }
+      "@pages": resolve(__dirname, "./src/pages"),
+    },
   },
   css: {
     modules: {
@@ -27,6 +29,6 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: ["dotenv/config", "src/setupTest.ts"]
-  }
+  },
 })
 

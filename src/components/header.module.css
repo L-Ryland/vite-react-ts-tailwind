@@ -1,0 +1,6 @@
+.header {
+  @apply w-full;
+  &_>div {
+    @apply flex p-20 justify-between;
+  }
+}

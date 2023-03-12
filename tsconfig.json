@@ -16,6 +16,12 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "types": ["vite/client"],
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": { "classnameTransform": "camelCase" }
+      }
+    ],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
@@ -24,7 +30,7 @@
       "@utils/*": ["src/utils/", "src/utils/*"],
       "@request/*": ["src/utils/request/", "src/utils/request/*"],
       "@hooks/*": ["src/hooks", "src/hooks/*"],
-      "@pages/*": ["src/pages/", "src/pages/*"],
+      "@pages/*": ["src/pages/", "src/pages/*"]
     }
   },
   "include": ["src"],

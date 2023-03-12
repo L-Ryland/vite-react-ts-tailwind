@@ -19,7 +19,7 @@ export const Page: React.FC = () => {
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
       />
 
-      <section>
+      <section className="pt-20">
         <h2>Pages in Storybook</h2>
         <div className="text-3xl">Hello World</div>
         <p>

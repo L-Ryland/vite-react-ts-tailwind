@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import CalendarSelector from "./CalenderSelector"
+import CalendarSelector from "./CalendarSelector"
 
 const meta = {
   title: "Example/Components/CalendarSelector",
